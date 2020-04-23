@@ -60,8 +60,8 @@
 </script>
 <style>
   .login_form {
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top:   10%;
+    padding-left:  10%;
     padding-right: 10%;
   }
   .qxs-ic_user {
@@ -82,10 +82,11 @@
     width: 20%;
     font-size: 16px;
     color: #2c3e50;
-    background: -webkit-linear-gradient(left, #bacafc, #bacafc); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, #bacafc, #bacafc); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, #bacafc, #bacafc); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to right, #bacafc , #bacafc); /* 标准的语法 */
+    /*background: -webkit-linear-gradient(left, #bacafc, #bacafc); !* Safari 5.1 - 6.0 *!*/
+    /*background: -o-linear-gradient(right, #bacafc, #bacafc); !* Opera 11.1 - 12.0 *!*/
+    /*background: -moz-linear-gradient(right, #bacafc, #bacafc); !* Firefox 3.6 - 15 *!*/
+    /*background: linear-gradient(to right, #bacafc , #bacafc); !* 标准的语法 *!*/
+    background: #96ebfc;
     filter: brightness(1);
   }
 </style>
