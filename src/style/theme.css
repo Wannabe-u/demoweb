@@ -4,37 +4,24 @@ body {
   font-family: "Microsoft YaHei UI Light";
 }
 
-.outer_box {
-  position: relative;
-  margin: 0 auto;
-  width: 50%;
-  height: 220px;
-  text-align: center;
-  filter: brightness(1.4);
-}
-
 .outer_label {
+  border-radius: 5px;
   margin: auto;
-  width: 50%;
-  height: 220px;
+  width: 20%;
+  height: 350px;
+  box-shadow: 0 0 8px 1px #4c4c4c;
   /*background-color: #000099;*/
 
-  filter: brightness(1.4);
+
 }
-.inner_label {
-  position: absolute;
-  left:0;
-  right: 0;
-  bottom: 0;
-  top:0;
-  margin: auto;
-  height: 50px;
-}
+
 .qxs-icon {
-  height: 40px;
-  width: 15%;
-  margin-bottom: 5px;
-  padding-left: 3%;
-  border: 0;
-  border-bottom: solid 1px lavender;
+  position: relative;
+  height: 30px;
+  width: 60%;
+  margin-bottom: 10px;
+  padding-left: 10%;
+  border-radius: 5px;
+  border-style: hidden;
+  box-shadow: 0 0 8px 1px #aaaaaa;
 }

@@ -1,21 +1,18 @@
 <template>
-  <div class="outer_box">
     <div class="outer_label">
-      <img class="inner_label login_logo" src="../../assets/logo.png">
-    </div>
+      <img class="login-icon" src="../../assets/logo.png">
     <div class="login_form">
       <input type="text"  class="qxs-ic_user qxs-icon"  placeholder="用户名" v-model="userName">
       <br>
       <input type="text"  class="qxs-ic_password qxs-icon"  placeholder="密码" v-model="password">
       <br>
       <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
-      <el-button class="login_btn" @click.native="login" type="primary" round :loading="isBtnLoading">登录</el-button>
-      <el-button class="login_btn" @click.native="register" type="primary" round :loading="isBtnLoading">注册</el-button>
-<!--      <div style="margin-top: 10px">-->
-<!--        <span style="color: #000099;" @click="login">账号登陆</span><span style="float: right;color: #A9A9AB">忘记密码？</span>-->
-<!--      </div>-->
+      <el-button class="login_btn" @click.native="login" type="primary" :loading="isBtnLoading">登录</el-button>
+      <div style="margin-right:10px;margin-left:10px;margin-top: 5px">
+        <span style="color: #afafaf;" @click="register">账号注册</span><span style="float: right;color: #A9A9AB">忘记密码？</span>
+      </div>
     </div>
-  </div>
+    </div>
 </template>
 
 
@@ -60,9 +57,13 @@
 </script>
 <style>
   .login_form {
-    padding-top:   10%;
-    padding-left:  10%;
+    padding-top: 0%;
+    padding-left: 10%;
     padding-right: 10%;
+  }
+  .login-icon{
+    position: relative;
+    height: 50%;
   }
   .qxs-ic_user {
     background: url("../../assets/login/ic_user.png") no-repeat;
@@ -73,20 +74,19 @@
     background: url("../../assets/login/ic_password.png") no-repeat;
     background-size: 13px 15px;
     background-position: 3%;
-    margin-bottom: 20px;
-  }
-  .login_logo {
-    height: 100%;
   }
   .login_btn {
-    width: 20%;
-    font-size: 16px;
-    color: #2c3e50;
+    height: 30px;
+    width: 30%;
+    font-size: 5px;
+    color: #ffffff;
+    line-height: 5px;
+    border:0px;
     /*background: -webkit-linear-gradient(left, #bacafc, #bacafc); !* Safari 5.1 - 6.0 *!*/
     /*background: -o-linear-gradient(right, #bacafc, #bacafc); !* Opera 11.1 - 12.0 *!*/
     /*background: -moz-linear-gradient(right, #bacafc, #bacafc); !* Firefox 3.6 - 15 *!*/
     /*background: linear-gradient(to right, #bacafc , #bacafc); !* 标准的语法 *!*/
-    background: #96ebfc;
-    filter: brightness(1);
+    background: #5eac85;
+
   }
 </style>
