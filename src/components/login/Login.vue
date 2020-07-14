@@ -11,6 +11,8 @@
       <div style="margin-right:10px;margin-left:10px;margin-top: 5px">
         <span style="color: #afafaf;" @click="register">账号注册</span><span style="float: right;color: #A9A9AB">忘记密码？</span>
       </div>
+      <div class="glyphicon glyphicon-plus-sign" title="点击我新增项目"
+           @click="createnewproject"></div>
     </div>
     </div>
 </template>
@@ -50,8 +52,12 @@
           this.$message.error('请输入密码');
           return;
         }
-
+      },
+      createnewproject(){
+        let routeData = this.$router.resolve({ name:'finduser', params:{id:'2'}})
+        window.open(routeData.href, '_blank')
       }
+
     }
   }
 </script>
