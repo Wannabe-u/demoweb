@@ -2,7 +2,6 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import FindUser from './components/finduser/FindUser'
 import router from './router'
 
 
@@ -24,9 +23,3 @@ new Vue({
   template: '<App/>'
 })
 
-new Vue({
-  el: '#app99',
-  router,
-  components: { FindUser },
-  template: '<FindUser/>'
-})

@@ -9,10 +9,9 @@
       <!--<button class="login_btn el-button el-button&#45;&#45;primary is-round" type="primary" round>登录</button>-->
       <el-button class="login_btn" @click.native="login" type="primary" :loading="isBtnLoading">登录</el-button>
       <div style="margin-right:10px;margin-left:10px;margin-top: 5px">
-        <span style="color: #afafaf;" @click="register">账号注册</span><span style="float: right;color: #A9A9AB">忘记密码？</span>
+        <span style="color: #afafaf;" @click>账号注册</span><span style="float: right;color: #A9A9AB">忘记密码？</span>
       </div>
-      <div class="glyphicon glyphicon-plus-sign" title="点击我新增项目"
-           @click="createnewproject"></div>
+      <el-button class="login_btn" @click="createnewproject" type="primary" >查询</el-button>
     </div>
     </div>
 </template>
@@ -20,7 +19,7 @@
 
 
 <script>
-  //  import { userLogin } from '../../api/api';
+   import FindUser from '../finduser/FindUser';
 
   export default {
     data() {
@@ -53,9 +52,10 @@
           return;
         }
       },
-      createnewproject(){
-        let routeData = this.$router.resolve({ name:'finduser', params:{id:'2'}})
-        window.open(routeData.href, '_blank')
+      createnewproject() {
+         this.$router.push({name: 'FindUser'}).catch();
+        err => {
+          console.log('输出报错',err)
       }
 
     }
