@@ -19,7 +19,7 @@
 
 
 <script>
-   import FindUser from '../finduser/FindUser';
+  import FindUser from '../finduser/FindUser';
 
   export default {
     data() {
@@ -29,10 +29,10 @@
         isBtnLoading: false
       }
     },
-    created () {
-      if(JSON.parse( localStorage.getItem('user')) && JSON.parse( localStorage.getItem('user')).userName){
-        this.userName = JSON.parse( localStorage.getItem('user')).userName;
-        this.password = JSON.parse( localStorage.getItem('user')).password;
+    created() {
+      if (JSON.parse(localStorage.getItem('user')) && JSON.parse(localStorage.getItem('user')).userName) {
+        this.userName = JSON.parse(localStorage.getItem('user')).userName;
+        this.password = JSON.parse(localStorage.getItem('user')).password;
       }
     },
     computed: {
@@ -53,14 +53,15 @@
         }
       },
       createnewproject() {
-         this.$router.push({name: 'FindUser'}).catch();
-        err => {
-          console.log('输出报错',err)
+        this.$router.push({name: 'FindUser'}).catch(err => {
+          console.log('输出报错', err)
+        })
       }
-
     }
   }
 </script>
+
+
 <style>
   .login_form {
     padding-top: 0%;
